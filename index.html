@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Petri Net Converter</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="col s6">
+            <h5>Input places: </h5>
+            <p>Format: name, token, x, y</p>
+            <textarea name="places" id="places" cols="30" rows="10"></textarea>
+         </div>
+
+         <div class="col s6">
+            <h5>Input transitions: </h5>
+            <p>Format: name, x, y</p>
+            <textarea name="transitions" id="transitions" cols="30" rows="10"></textarea>
+         </div>
+      </div>
+
+
+      <div class="row">
+         <h5>Input arc: </h5>
+         <p>Format: des->sou</p>
+         <textarea name="arcs" id="arcs" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="row center-align">
+         <button class="btn center-align">Generate</button>
+      </div>
+
+      <div class="row">
+         <textarea name="result" id="result" cols="30" rows="10"></textarea>
+      </div>
+
+   </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
